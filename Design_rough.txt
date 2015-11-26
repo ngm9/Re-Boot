@@ -2,10 +2,22 @@ A master-slave system where a master is just another slave with a mask. A slave 
 
 (this is reading like a Lords system of the Great Britain.. hmm.. they did rule for long. let's see)
 
+=======
+Slaves
+=======
+A slave provides services based on task SLA - best effort, reliable and secure etc. A slave has full control over a device's resources - well, full enough to meet the task's SLA it is performing. That could mean a slave is an elevated access process on an existing kernel or the kernel itself. Essentially, the slave should not be blocked out when wanting to perform tasks allotted by the master.
+
+======
+Master
+======
+A master is a slave that performs the additional task of routing tasks and maintaining persistent state. It provides an API for applications on top along with a state of resource knowledge. The applications can then allot tasks to the master (the granularity of which is yet to be determined). 
+
+
 =================
 Choosing a Master
 =================
 If there is only 1 slave, he is the master of himself. In case of two or more slaves, the one that came first is the master.
+
 
 
 =================
