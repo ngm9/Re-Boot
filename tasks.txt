@@ -1,0 +1,22 @@
+===============================
+choose a language to develop on
+===============================
+
+- language needs to create software that either makes calls to underlying kernels or to be the kernel itself.
+- no reinventing the wheel, so for the latter - a language in which a credible kernel exists already.
+
+possible options: 
+  a) Python - Openstack is sort of Re:Boot's cousin. Openstack is essentially a bunch of python scripts. 
+  b) Go -     New and strong community.
+  c) Rust
+  d) C / C++
+  
+=====================
+A usecase to fullfill
+=====================
+
+- A camera surveilance application that can use your android application OR a raspberry pi 2 with a camera module into your re:boot system. The mother device should connect with a linux application as the other slave system.
+
+
+
+
