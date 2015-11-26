@@ -1,0 +1,14 @@
+A master-slave system where a master is just another slave with a mask. A slave recognizes resources attached to his device, reports to the master. The master keeps knowledge of resources for the slaves. The master also acts like a virtual routing function to route calls to slaves that are best placed to solve a task (coming either from an application running above, or otherwise generated from other slaves).
+
+(this is reading like a Lords system of the Great Britain.. hmm.. they did rule for long. let's see)
+
+=================
+Choosing a Master
+=================
+If there is only 1 slave, he is the master of himself. In case of two or more slaves, the one that came first is the master.
+
+
+=================
+Where's the rest?
+=================
+Well, I like to make things up as I go.
