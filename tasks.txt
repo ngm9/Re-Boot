@@ -18,5 +18,30 @@ A usecase to fullfill
 - A camera surveilance application that can use your android application OR a raspberry pi 2 with a camera module into your re:boot system. The mother device should connect with a linux application as the other slave system.
 
 
+=============
+Tasks - naman
+=============
+1. slave - write a basic program that reads all the devices and displays them.
+
+2. master - write a simple program that establishes and maintains a session with a slave.
+                + Also receives the slave's resource information.
+   slave  - the above slave now should listen for a master SYN
+                + establish session with master, send keep alives every 5 seconds.
+                + send a list of resources to the master.
+
+(we should have STATEs for each master and slave - let's wait till it gets that complex)
+(hopefully, by this time the SD card and camera module arrive for my Pi2 arrive)
+
+3. master - accepts small python scripts to run the camera (take a picture on button press or something)
+                + run it completely on the slave, accept events on the master; send/exectue them on the slave
+                + return state/result to script on the master
+
+   slave  - runs a small script sent by master.
+                + sends state / result back to master
+                + accepts events from master, executes them as a part of the script (button click ?) and returns
+                  state/result to master.
+
+
+
 
 
